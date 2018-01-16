@@ -9,10 +9,12 @@
   text-align: center
   //height: 12vh
   min-height: 80px
-  max-height: 200px
   padding: 15px
   margin: 0 auto
   font-weight: 300
+  width: 100%
+  display: flex
+  justify-content: center
 
 .email-nudge p
   font-size: 22px
@@ -20,7 +22,16 @@
   text-align: left
 
 .nudge-logo, .nudge-form
-  padding: 10px 25px
+  padding: 10px 30px
+
+.nudge-logo
+  order: 0
+
+.nudge-text
+  order: 1
+
+.nudge-form
+  order: 2
 
 .nudge-logo
   img
@@ -36,6 +47,7 @@
     font-size: 14px
     padding: 8px
     border: 0
+    margin-bottom: 10px
 
 #email-input
   background: white
@@ -49,7 +61,7 @@
 
 #close-message
   position: relative
-  bottom: 20px
+  bottom: 0
   cursor: pointer
 
 
@@ -58,3 +70,4 @@
     float: right
     padding: 0 10px
     background-color: white
+    font-size: 18px
