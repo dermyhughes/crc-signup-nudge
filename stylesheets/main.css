@@ -64,7 +64,7 @@ h1 {
   border: 0;
   margin-bottom: 10px; }
 
-#email-input {
+#control_EMAIL {
   background: white;
   color: #222;
   min-width: 200px; }
@@ -93,6 +93,10 @@ h1 {
   bottom: -10px;
   z-index: -1; }
 
+.tc-msg {
+  float: right;
+  color: #fff; }
+
 @media (max-width: 680px) {
   .email-nudge {
     flex-direction: column; }
@@ -104,6 +108,9 @@ h1 {
     text-align: center; }
 
   .nudge-logo, .nudge-form {
-    padding: 10px; } }
+    padding: 10px; }
+
+  .tc-msg {
+    float: none; } }
 
 /*# sourceMappingURL=main.css.map */

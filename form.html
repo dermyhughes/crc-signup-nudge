@@ -8,7 +8,8 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/closeNudge.js"></script>
+	<script src="js/countryConvert.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 </head>
 
@@ -33,24 +34,36 @@
 	</div>
 	<div id="email-nudge-container">
 		<div id="close-message">
-			<p>Close this message <span style="font-size:22px;padding-left: 10px">&#10761;</span></p>
+			<p>Close this message
+				<span style="font-size:22px;padding-left: 10px">&#10761;</span>
+			</p>
 		</div>
 		<div class="email-nudge">
 			<div class="nudge-logo">
 				<img src="http://www.chainreactioncycles.com/static/images/logo.jpg" />
 			</div>
 			<div class="nudge-text">
-				<p>Want <strong>XX%</strong> off your next order?</p>
+				<p>Want
+					<strong>XX%</strong> off your next order?</p>
 				<p style="font-size:1rem">Sign up to the newsletter today for discount on your first order!</p>
 			</div>
+			<!-- Form begin -->
 			<div class="nudge-form">
-				<form>
+				<form method="post" action="http://www.pages05.net/chainreactioncycles/nudgesignuptest/nudge-form" pageId="14683607" siteId="684651"
+				    parentPageId="14683605">
 					<div class="input-container">
-						<input id="email-input" type="email" placeholder="Enter your email address" />
+						<input id="control_EMAIL" name="Email" required type="email" placeholder="Enter your email address" />
+						<input type="hidden" name="Country" value="" id="control_COLUMN3">
+						<input type="hidden" name="Source" id="control_COLUMN23" value="Nudge Form">
 					</div>
 					<input id="sign-up-input" type="submit" value="Sign Up">
+					<input type="hidden" name="formSourceName" value="StandardForm">
+					<!-- DO NOT REMOVE HIDDEN FIELD sp_exp -->
+					<input type="hidden" name="sp_exp" value="yes">
 				</form>
+				<div class="tc-msg">*Minimum spend £50</div>
 			</div>
+			<!-- Form end -->
 		</div>
 	</div>
 </body>
