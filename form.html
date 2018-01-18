@@ -5,11 +5,59 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Nudge Form Test</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/closeNudge.js"></script>
+	<script src="js/countryConvert.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+	<!-- Start Dummy UV -->
+	<script type="text/javascript">
+
+		window.universal_variable = {
+		
+			'version':'1.2.1' ,
+			'servertime':'2018-01-17T14:09:57+0000' ,
+		'user':{
+		
+			'country':'us',
+			'gender':'',
+			'wishlist':'no',
+			'language':'en',
+			'subscribed':'no',
+			'registration_date':'',
+			'last_activity':'',
+			'user_id':'4173024127',
+			'name':'',
+			'total_order_count':'',
+			'currency':'USD',
+			'total_order_value':'',
+			'average_order_value':'',
+			'age':''
+		},
+		'basket':{
+		
+			'promotion_discount':0.00,
+			'total':0.00,
+			'shipping_cost':0.00,
+			'subtotal':0.00,
+			'shipping_method':'',
+			'currency':'USD',
+			'id':'CRC3712982836',
+			'line_items':[],
+			'no_of_basket_items':0,
+			'vouchers':[],
+			'voucher_discount':0.00,
+			'subtotal_include_tax':0.00
+		},
+		'page':{
+		
+			'breadcrumb':[],
+			'type':'homePage'
+		}
+			}
+		</script>
+		<!-- End Dummy UV -->
 </head>
 
 <body>
@@ -33,26 +81,36 @@
 	</div>
 	<div id="email-nudge-container">
 		<div id="close-message">
-			<p>Close this message <span style="font-size:22px;padding-left: 10px">&#10761;</span></p>
+			<p>Close this message
+				<span style="font-size:22px;padding-left: 10px">&#10761;</span>
+			</p>
 		</div>
 		<div class="email-nudge">
 			<div class="nudge-logo">
 				<img src="http://www.chainreactioncycles.com/static/images/logo.jpg" />
 			</div>
 			<div class="nudge-text">
-				<p>Want <strong>XX%</strong> off your next order?</p>
+				<p>Want
+					<strong>XX%</strong> off your next order?</p>
 				<p style="font-size:1rem">Sign up to the newsletter today for discount on your first order!</p>
 			</div>
+			<!-- Form begin -->
 			<div class="nudge-form">
-				<form>
+				<form method="post" action="#" pageId="#" siteId="#" parentPageId="#">
 					<div class="input-container">
-						<input id="email-input" type="email" placeholder="Enter your email address" />
+						<input id="control_EMAIL" name="Email" required type="email" placeholder="Enter your email address" />
+						<input type="hidden" name="Country" value="" id="control_COLUMN3">
+						<input type="hidden" name="Source" id="control_COLUMN23" value="Nudge Form">
 					</div>
 					<input id="sign-up-input" type="submit" value="Sign Up">
+					<input type="hidden" name="formSourceName" value="StandardForm">
+					<!-- DO NOT REMOVE HIDDEN FIELD sp_exp -->
+				<input type="hidden" name="sp_exp" value="yes">
 				</form>
 			</div>
+			<!-- Form end -->
 		</div>
-	</div>
+	</div>	
 </body>
 
 </html>
