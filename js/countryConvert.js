@@ -8,10 +8,10 @@ $(document).ready(function () {
             sp_country = "United Kingdom";
             break;
         case "us":
-            sp_country = "United States Of America";
+            sp_country = "USA";
             break;
         default:
-            sp_country = "";
+            sp_country = "Error";
     }
 
     document.getElementById('control_COLUMN3').value = sp_country;
